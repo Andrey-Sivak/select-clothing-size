@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container.hide,
+.result-container.hide {
+    display: none;
+}
+
+.result-container {
+    display: block;
+}
+
+.left-content {
+    margin-right: 40px;
+}
+
+.left-content__img {
+    margin: 0 0 50px;
+}
+
+.page-title {
+    margin-bottom: 55px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.result-container .page-title {
+    margin-bottom: 105px;
+}
+
+.size-value {
+    text-align: center;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px;
+    margin-bottom: 238px;
+}
+
+.form {
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__field {
+    flex: 0 0 49%;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 27px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+input {
+    border: 1px solid #000;
+    width: 193px;
+    height: 104px;
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    appearance: none;
+}
+
+.form__field_note {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    color: #4E4E4E;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.btn {
+    transition: all ease-in-out .3s;
+    display: block;
+    background-color: #B5B5B5;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 0;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn#enter {
+    width: 100px;
+}
+
+.btn#continue {
+    width: 327px;
+}
+
+.btn:hover {
+    background-color: #353535;
+}
+
+.form__error {
+    text-align: center;
+    color: red;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__error.active {
+    display: block;
+}
